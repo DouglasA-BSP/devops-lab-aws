@@ -1,3 +1,9 @@
+on:
+  push:
+    branches: ['**']        # roda em qualquer branch
+  pull_request:
+    branches: ['main']      # roda em PRs direcionados para main
+
 jobs:
   ci-minimo:
     runs-on: ubuntu-latest
