@@ -65,7 +65,7 @@ jobs:
           run: |
             newman run tests/postman/health-check.postman_collection.json           --env-var baseUrl=http://localhost:5000
 
-    docker-publish:
+  docker-publish:
       runs-on: ubuntu-latest
       needs: docker-build
       steps:
